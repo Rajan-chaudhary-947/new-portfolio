@@ -20,14 +20,6 @@ Next.js 16.3.5, React 19.3.0, TypeScript, CSS.
 
 Current package versions were checked against npm on 12 September 2026.
 
-## Before deploying
-
-1. Verify the profile, project descriptions, asset paths, and live URLs in `lib/site.ts` and `lib/projects.ts`.
-2. Copy `.env.example` to `.env.local` and add a valid Gemini API key. Never commit `.env` or `.env.local`.
-3. Add the real resume file at `public/resume.pdf` and set `resumeHref` to `/resume.pdf` if needed.
-4. Deploy to Vercel and add `GEMINI_API_KEY` and `GEMINI_MODEL` to the deployment environment.
-5. Submit `/sitemap.xml` to Google Search Console.
-
 ## Run
 
 ```bash
@@ -42,6 +34,4 @@ npm run build
 npm start
 ```
 
-## Note about GitHub projects
-
-The portfolio calls GitHub's public repository endpoint server-side with a one-hour revalidation window. This means public repositories added later can appear in the GitHub section and in the sitemap without manually editing the portfolio.
+## Live on: [rajanchaudhary947.vercel.app](https://rajanchaudhary947.vercel.app)

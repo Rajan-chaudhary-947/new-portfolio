@@ -130,18 +130,19 @@ export const featuredProjects: Project[] = [
     name: "Rajan Chaudhary Portfolio",
     eyebrow: "Personal Portfolio",
     description:
-      "A Next.js portfolio presenting full-stack projects, engineering experience, skills, certifications and live work samples.",
+      "A Next.js portfolio presenting full-stack projects, engineering experience, skills, certifications, live work samples, and an integrated Gemini assistant.",
     longDescription:
-      "This portfolio is a Next.js App Router project designed to make Rajan's engineering work easy to browse, understand, and verify through project details, live links and source repositories.",
-    stack: ["Next.js", "React", "TypeScript", "CSS", "Vercel"],
+      "This portfolio is a Next.js App Router project designed to make Rajan's engineering work easy to browse, understand, and verify through project details, live links, source repositories, and an AI-powered Gemini assistant that answers questions about his experience, projects, and skills in real time.",
+    stack: ["Next.js", "React", "TypeScript", "Gemini", "CSS", "Vercel"],
     highlights: [
-      "Responsive project-focused portfolio experience.",
-      "Server-rendered GitHub repository discovery with revalidation.",
-      "Structured project pages, metadata, sitemap, and JSON-LD profile data.",
+      "Responsive, project-focused portfolio experience with a polished design system.",
+      "Server-rendered GitHub repository discovery with revalidation and structured project pages.",
+      "Integrated Gemini assistant for conversational portfolio guidance and project discovery.",
+      "Metadata, sitemap, JSON-LD, and SEO-first structure for search and discoverability.",
     ],
     image: "/assets/images/portfolio.png",
     liveUrl: "https://rajanchaudhary947.vercel.app",
-    githubUrl: "https://github.com/Rajan-chaudhary-947/rajan-portfolio-next",
+    githubUrl: "https://github.com/Rajan-chaudhary-947/new-portfolio",
     featured: false,
   },
 ];
