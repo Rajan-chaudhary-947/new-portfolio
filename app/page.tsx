@@ -84,15 +84,93 @@ export default function Home() {
           </div>
         </div>
 
+
         <section className="section" id="work" aria-labelledby="work-title">
           <div className="container">
-            <SectionHeading eyebrow="01 · Selected projects" title="Projects which helps me to enhance my skills." description="Each project has helped me strengthen my skills by turning practical ideas into working full-stack experiences and applying what I learned across frontend interfaces, backend APIs, databases, and deployment." />
-            <div className="project-grid">
-              {featuredProjects.map((project) => <ProjectCard key={project.slug} project={project} />)}
+
+
+
+            <div className="experience-card">
+              <div className="experience-header">
+                <div>
+                  <h3>Full Stack Developer Intern</h3>
+                  <p className="experience-company">Metaphile · Noida, India</p>
+                </div>
+
+                <div className="experience-date">
+                  Jan 2025 — Jun 2025
+                </div>
+              </div>
+
+              <div className="experience-content">
+                <p>
+                  Worked on production web applications using React.js, Next.js, TypeScript,
+                  Node.js, Express.js, MongoDB, and PostgreSQL, contributing across frontend,
+                  backend, database, testing and release workflows.
+                </p>
+
+                <ul>
+                  <li>
+                    Developed and shipped production features using
+                    <strong>
+                      {" "}React.js, Next.js, TypeScript, Node.js, Express.js, MongoDB and
+                      PostgreSQL
+                    </strong>
+                    , contributing across frontend, backend and database layers.
+                  </li>
+
+                  <li>
+                    Built reusable React.js components and responsive interfaces,
+                    integrating REST APIs with client-side validation and protected
+                    application workflows.
+                  </li>
+
+                  <li>
+                    Implemented backend services and RESTful APIs with CRUD endpoints,
+                    authentication, business logic and MongoDB schema design using
+                    Mongoose.
+                  </li>
+
+                  <li>
+                    Collaborated with the development team on feature implementation,
+                    Postman API testing, debugging and Git/GitHub code-review
+                    workflows to deliver releases on schedule.
+                  </li>
+                </ul>
+
+                <div className="experience-tech">
+                  <span>React.js</span>
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>MongoDB</span>
+                  <span>PostgreSQL</span>
+                  <span>REST APIs</span>
+                  <span>Postman</span>
+                  <span>Git</span>
+                  <span>GitHub</span>
+                </div>
+              </div>
             </div>
+
+            {/* Existing Projects */}
+            <div className="work-projects">
+              <SectionHeading
+                eyebrow="02 · Selected projects"
+                title="Projects which helps me to enhance my skills."
+                description="Each project has helped me strengthen my skills by turning practical ideas into working full-stack experiences and applying what I learned across frontend interfaces, backend APIs, databases, and deployment."
+              />
+
+              <div className="project-grid">
+                {featuredProjects.map((project) => (
+                  <ProjectCard key={project.slug} project={project} />
+                ))}
+              </div>
+            </div>
+
           </div>
         </section>
-
         <section className="section alt" id="github" aria-labelledby="github-title">
           <div className="container">
             <SectionHeading eyebrow="02 · Company assessment tasks" title="Multiple assessments completed on time." description="These company assessment tasks were completed on time by turning real requirements into working full-stack applications with clear workflows, practical architecture, and maintainable implementation." />
@@ -192,7 +270,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="footer">
-        
+
         <div className="social-links">
           {[
             { icon: "code" as const, label: "Code360", link: "https://www.naukri.com/code360/profile/RajanS947" },

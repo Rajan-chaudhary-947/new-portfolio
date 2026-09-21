@@ -85,3 +85,26 @@ export const skillGroups: SkillGroup[] = [
     skills: ["Data Structures & Algorithms", "Object-Oriented Programming", "Database Management Systems", "Web Development", "Computer Networks", "Operating Systems", "Software Engineering", "Internet of Things", "System Design", "Distributed Systems", "Generative AI"],
   },
 ];
+
+export type exp = {
+  company: string;
+  role: string;
+  duration: string;
+  description: string[];
+  tech_stack: string[];
+};
+
+export const experience: exp[] = [
+  {
+    company: "Metaphile",
+    role: "Full Stack Developer Intern",
+    duration: "january 2025 - June 2025",
+    description: ["Worked on production web applications using React.js, Next.js, TypeScript,Node.js, Express.js, MongoDB, and PostgreSQL, contributing across frontend,backend, database, testing and release workflows.",
+       "Developed and shipped production features using React.js, Next.js, TypeScript, Node.js, Express.js, MongoDB and PostgreSQL, contributing across frontend, backend and database layers.",
+      "Built reusable React.js components and responsive interfaces,integrating REST APIs with client-side validation and protected application workflows.",
+      "Implemented backend services and RESTful APIs with CRUD endpoints, authentication, business logic and MongoDB schema design using Mongoose.",
+      "Collaborated with the development team on feature implementation, Postman API testing, debugging and Git/GitHub code-review workflows to deliver releases on schedule.",
+    ],
+    tech_stack: ["React.js", "Next.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "Mongoose", "REST APIs", "Git/GitHub"],
+  }
+]

@@ -68,7 +68,7 @@ export const featuredProjects: Project[] = [
       "Cloudinary-backed profile and chat media uploads.",
     ],
     image: "/assets/images/chatApp.png",
-    liveUrl: "https://chit-chat-eight-alpha.vercel.app",
+    liveUrl: "https://chit-chat-rs-annl.onrender.com/",
     githubUrl: "https://github.com/Rajan-chaudhary-947/chit-chat",
     featured: true,
   },

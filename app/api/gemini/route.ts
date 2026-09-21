@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { assessmentProjects, certifications, featuredProjects } from "@/lib/projects";
-import { skillGroups } from "@/lib/skills";
+import { skillGroups, experience } from "@/lib/skills";
 import { site } from "@/lib/site";
 
 export const runtime = "nodejs";
@@ -21,6 +21,7 @@ const basePortfolioContext = {
       code360: site.code360,
     },
   },
+  experience,
   projects: [...featuredProjects, ...assessmentProjects].map(({ slug, name, eyebrow, description, longDescription, stack, highlights, liveUrl, githubUrl }) => ({
     slug,
     name,

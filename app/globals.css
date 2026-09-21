@@ -789,7 +789,7 @@ main {
   margin: 0;
   color: var(--muted);
   font-size: 18px;
-  max-width: 700px;
+  max-width: 1000px;
 }
 
 .project-grid {
@@ -829,6 +829,97 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.experience-card {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--card);
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.experience-company {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.experience-date {
+  color: var(--muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.experience-content > p {
+  max-width: 1000px;
+  margin-bottom: 1.25rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.experience-content ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.experience-content li {
+  margin-bottom: 0.7rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.experience-content li strong {
+  color: var(--foreground);
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.experience-tech span {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.work-projects {
+  margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+  .experience-card {
+    padding: 1.25rem;
+    margin-bottom: 4rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .experience-date {
+    white-space: normal;
+  }
 }
 
 @media (min-width: 681px) and (max-width: 900px) {
