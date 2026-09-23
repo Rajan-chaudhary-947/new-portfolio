@@ -10,6 +10,7 @@ export type Project = {
   liveUrl?: string;
   githubUrl?: string;
   featured?: boolean;
+  privacyUrl?: string;
 };
 
 export const featuredProjects: Project[] = [
@@ -41,6 +42,37 @@ export const featuredProjects: Project[] = [
     githubUrl: "https://github.com/Rajan-chaudhary-947/dotConnect",
     featured: true,
   },
+  {
+    slug: "safebrowse",
+    name: "SafeBrowse",
+    eyebrow: "Web Policy & Parental Controls",
+    description:
+      "A local-first browser extension for website filtering with domain and category policies, scheduled restrictions, profile-based controls, activity logging and analytics.",
+    longDescription:
+      "SafeBrowse turns browser access control into a rule-driven system: users can block or allow websites by domain, category and URL pattern, apply schedules, manage separate profiles, resolve overlapping policies by priority, protect administration with a PIN, and review local enforcement activity through an analytics dashboard.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Manifest V3",
+      "declarativeNetRequest",
+      "Chrome Extension APIs",
+      "Web Crypto API",
+      "Vitest",
+    ],
+    highlights: [
+      "Rule-driven web filtering with domain, category, allow/block, priority and schedule-based policies.",
+      "Browser-level enforcement using Manifest V3 declarativeNetRequest with scheduled restrictions and policy exceptions.",
+      "PIN-protected parent controls, multiple profiles, policy simulation, configuration backup/restore and optional browser synchronization.",
+      "Local activity and analytics for blocked requests, seven-day activity, hourly trends, top blocked destinations and policy impact.",
+    ],
+    image: "/assets/images/safebrowse.png",
+    liveUrl: "",
+    githubUrl: "",
+    privacyUrl: "/safebrowse/privacy",
+    featured: true,
+  },
+
   {
     slug: "chit-chat",
     name: "Chit-Chat",

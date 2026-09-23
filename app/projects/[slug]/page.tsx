@@ -86,6 +86,15 @@ export default async function ProjectPage({ params }: Params) {
             <div className="hero-actions">
               {project.githubUrl ? <a className="btn secondary" href={project.githubUrl} target="_blank" rel="noreferrer"><Icon name="github" /> Source code</a> : null}
               {project.liveUrl ? <a className="btn primary" href={project.liveUrl} target="_blank" rel="noreferrer"><Icon name="external" /> Live project</a> : null}
+              {project.privacyUrl && (
+                <a
+                  href={project.privacyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy ↗
+                </a>
+              )}
             </div>
           </div>
         </div>
