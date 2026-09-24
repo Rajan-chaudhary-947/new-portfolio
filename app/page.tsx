@@ -88,9 +88,7 @@ export default function Home() {
         <section className="section" id="work" aria-labelledby="work-title">
           <div className="container">
 
-
-
-            <div className="experience-card">
+            {/* <div className="experience-card">
               <div className="experience-header">
                 <div>
                   <h3>Full Stack Developer Intern</h3>
@@ -152,7 +150,7 @@ export default function Home() {
                   <span>GitHub</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Existing Projects */}
             <div className="work-projects">

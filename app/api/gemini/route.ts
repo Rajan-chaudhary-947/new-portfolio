@@ -21,7 +21,7 @@ const basePortfolioContext = {
       code360: site.code360,
     },
   },
-  experience,
+  //experience,
   projects: [...featuredProjects, ...assessmentProjects].map(({ slug, name, eyebrow, description, longDescription, stack, highlights, liveUrl, githubUrl }) => ({
     slug,
     name,
